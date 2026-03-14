@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+
+* {
+    color: inherit;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+
+.modal {
+    position: fixed;
+    transform: translate(-50%, 0);
+    top: 0;
+    left: 50%;
+    box-shadow: 
+        inset 0 0 0 5px hsl(0, 100%, 90%),
+        0 0 10px 5px hsl(0, 100%, 50%),
+        inset 0 0 10px 9px hsl(0, 100%, 50%);
+    background-color: black;
+    color: hsl(0, 100%, 90%);
+    text-shadow: 
+        0 0 5px hsl(0, 100%, 50%),
+        0 0 10px hsl(0, 100%, 50%);
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: 15px;
+    transition: all 0.2s;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover{
+        box-shadow: 
+            inset 0 0 0 5px hsl(0, 100%, 90%),
+            0 0 10px 8px hsl(0, 100%, 50%),
+            inset 0 0 10px 13px hsl(0, 100%, 50%);
+    }
+}
+
+/* .modal__text {} */
