@@ -5,14 +5,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at center, #250000 0%, #050000 100%);
+    /* background: radial-gradient(circle at center, #250000 0%, #050000 100%); */
     perspective: 1200px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-image: url(../../img/matrixBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.greetings__grid {
+/* .greetings__grid {
     position: absolute;
     width: 400%;
     height: 120%;
@@ -35,7 +39,7 @@
     transform: rotateX(85deg);
     mask-image: linear-gradient(to top, black 20%, transparent 80%);
     -webkit-mask-image: linear-gradient(to top, black 20%, transparent 80%);
-}
+} */
 
 .greetings__content {
     display: flex;
